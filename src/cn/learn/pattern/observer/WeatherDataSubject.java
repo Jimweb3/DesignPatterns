@@ -29,7 +29,6 @@ public class WeatherDataSubject implements ISubjcet{
 			list.remove(o);
 		}
 	}
-
 	//通知
 	@Override
 	public void notifyObserver() {
@@ -38,21 +37,15 @@ public class WeatherDataSubject implements ISubjcet{
 			observer.update(temperature,himidity, pressture);
 		}
 	}
-	
 	//定义一个改变主题数据的方法，这个方法在实际中不是手动对数据进行更改，这儿只是模拟
 	public void setWeatherData(float temperature,float himidity,float pressture){
 		this.temperature = temperature;
 		this.himidity = himidity;
 		this.pressture = pressture;
-		
 		notifyChange();
-		
 	}
 
 	private void notifyChange() {
 		notifyObserver();
 	}
-	
-	
-
 }

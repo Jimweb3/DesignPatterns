@@ -11,8 +11,7 @@ public class CurrentConditionsDisplay implements IObserver,DisplayElement {
 		this.subject = subject;
 		subject.registerObserver(this);
 	}
-	
-	
+
 	@Override
 	public void display() {
 		System.out.println("The temperature is :"+temperature+" and the himidity is :" + himidity);
@@ -24,9 +23,4 @@ public class CurrentConditionsDisplay implements IObserver,DisplayElement {
 		this.himidity = himidity;
 		display();
 	}
-	
-	
-	
-
-
 }
