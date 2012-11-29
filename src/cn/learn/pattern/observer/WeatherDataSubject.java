@@ -19,7 +19,6 @@ public class WeatherDataSubject implements ISubjcet{
 	
 	@Override
 	public void registerObserver(IObserver o) {
-		// TODO Auto-generated method stub
 		list.add(o);
 	}
 
@@ -34,7 +33,6 @@ public class WeatherDataSubject implements ISubjcet{
 	//֪ͨ
 	@Override
 	public void notifyObserver() {
-		// TODO Auto-generated method stub
 		for (int i = 0; i <list.size(); i++) {
 			IObserver observer = list.get(i);
 			observer.update(temperature,himidity, pressture);
@@ -46,6 +44,13 @@ public class WeatherDataSubject implements ISubjcet{
 		this.temperature = temperature;
 		this.himidity = himidity;
 		this.pressture = pressture;
+		
+		notifyChange();
+		
+	}
+
+	private void notifyChange() {
+		notifyObserver();
 	}
 	
 	

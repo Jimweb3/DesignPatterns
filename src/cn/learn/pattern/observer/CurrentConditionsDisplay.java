@@ -9,18 +9,24 @@ public class CurrentConditionsDisplay implements IObserver,DisplayElement {
 	
 	public CurrentConditionsDisplay(WeatherDataSubject subject) {
 		this.subject = subject;
+		subject.registerObserver(this);
 	}
 	
 	
 	@Override
 	public void display() {
-		
+		System.out.println("The temperature is :"+temperature+" and the himidity is :" + himidity);
 	}
 
 	@Override
 	public void update(float temperature, float himidity, float pressture) {
-				
+		this.temperature = temperature;
+		this.himidity = himidity;
+		display();
 	}
+	
+	
+	
 
 
 }
