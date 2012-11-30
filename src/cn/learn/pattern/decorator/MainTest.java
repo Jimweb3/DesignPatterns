@@ -15,7 +15,6 @@ public class MainTest {
 		beverage2 = new Whip(beverage2);//ÓÃWhip×°ÊÎ
 		System.out.println(beverage2.getDescription()+" $"+beverage2.cost());
 		
-		
 	}
 
 }
