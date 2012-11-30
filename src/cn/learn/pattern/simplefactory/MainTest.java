@@ -7,7 +7,6 @@ public class MainTest {
 		PizzaStore store = new PizzaStore(factory);
 		
 		Pizza pizza = store.orderPizza("cheese");
-		
 		pizza.display();
 		
 	}
