@@ -21,9 +21,9 @@ public class MainTest {
 		
 	}
 	
+	//这个就相当于客户系统，它只能调用到鸭子这个接口
 	public static void testDuck(IDuck duck){
 		duck.quack();
 		duck.fly();
 	}
-	
 }

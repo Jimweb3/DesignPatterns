@@ -9,5 +9,4 @@ public class WildTurkey implements ITurkey{
 	public void fly() {
 		System.out.println("我也能飞，但飞一小段");
 	}
-
 }

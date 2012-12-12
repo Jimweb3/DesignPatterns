@@ -21,5 +21,4 @@ public class TurkeyAdapter implements IDuck{
 			turkey.fly();
 		}
 	}
-
 }
