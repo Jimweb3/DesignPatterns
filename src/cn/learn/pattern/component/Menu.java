@@ -24,7 +24,7 @@ public class Menu extends MenuComponent{
 	public String getDesc() {
 		return desc;
 	}
-	
+
 	@Override
 	public void add(MenuComponent menuComponent) {
 		menuComponents.add(menuComponent);

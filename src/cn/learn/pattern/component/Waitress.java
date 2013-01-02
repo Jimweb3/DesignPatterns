@@ -28,10 +28,6 @@ public class Waitress {
 				//e.printStackTrace();
 			}
 		}
-			
-		
-		
-		
 	}
 	
 	
